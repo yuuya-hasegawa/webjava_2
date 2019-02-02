@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Battle of Monster</title>
+</head>
+<body>
+  <div>
+    <form action="#" th:action="@{/battleofmonster}" th:object="${battleForm}" method="post">
+      <div>１体目</div>
+      <div>
+        <select name="monsterOneName">
+          <option value="flame">flame</option>
+          <option value="water">water</option>
+          <option value="grass">grass</option>
+        </select>
+      </div>
+      <div>２体目</div>
+      <div>
+        <select name="monsterTwoName">
+          <option value="flame">flame</option>
+          <option value="water">water</option>
+          <option value="grass">grass</option>
+        </select>
+      <div>ステージ</div>
+      <select name="battleStage">
+        <option value="0">flame</option>
+        <option value="1">water</option>
+        <option value="2">grass</option>
+      </select>
+      <input type="submit" value="バトル開始" />
+    </form>
+  </div>
+</body>
+</html>
